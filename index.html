@@ -14,8 +14,7 @@
   <div id="app">
     <div class="page-wrapper">
 
-      <!-- Background Image -->
-      <img class="bg-image" src="images/bg.jpg" alt="" />
+
 
 
 
@@ -181,7 +180,7 @@
             <div class="envelope-scaled" :style="{
               transform: 'translateX(-50%) scale(' + envelopeScale + ')',
               width: envelopeNativeW + 'px',
-              height: envelopeNativeH + 'px'
+              height: (envelopeNativeH - 120) + 'px'
             }">
               <img class="envelope-flap" :style="{
                 width: envelopeNativeW + 'px',
@@ -197,6 +196,7 @@
                 <li>Only one code can be entered per account.</li>
                 <li>Rewards are sent to your Mailbox in-game, and it must be claimed within 14 days.</li>
                 <li>You can claim up to 5 rewards.</li>
+                <li>Any user with no login history from March 1 to May 31, 2026 is classified as a returning user, and remains classified as a returning user even if they log in on or after June 1, 2026.</li>
                 <li>All times are based on [event timezone].</li>
               </ul>
             </div>
@@ -321,7 +321,7 @@
           toasts: [],
           windowWidth: window.innerWidth,
           envelopeNativeW: 898,
-          envelopeNativeH: 460,
+          envelopeNativeH: 500,
           noticesExtraH: 180,
           referralData: [
             { no: 1, date: '2026-XX-XX 00:00:00', account: 'Play***' },
